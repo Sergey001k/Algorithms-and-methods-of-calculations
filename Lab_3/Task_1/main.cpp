@@ -7,9 +7,19 @@ struct section {
 	double b;
 };
 
+//double function(double x) {
+//	return exp(-(x * x)) - pow((x - 1), 2);
+//}
+
+//double function(double x) {
+//	return exp(x) + (x * x) - 2;
+//}
+
 double function(double x) {
-	return exp(-(x * x)) - pow((x - 1), 2);
+	return x - 1/tan(x);
+
 }
+
 
 double dichot(double(*f)(double), double a, double b, double eps) {
 	section sect = { a, b };

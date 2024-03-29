@@ -37,6 +37,7 @@ def newton_raphson(x0, tol, max_iter=100):
     return x
 
 x0 = [1.0, 1.0]
-eps = 10**(-4)
+eps = 10**(-4) 
 result = newton_raphson(x0, eps)
-print("Решение системы уравнений:", result)
+print("Решение системы уравнений:")
+print(f"x = {result[0]} y = {result[1]}")
